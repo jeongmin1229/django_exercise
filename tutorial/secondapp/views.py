@@ -21,3 +21,5 @@ def show(request):
         result += c.name + ' ' +str(c.cnt) + '<br>'
     
     return HttpResponse(result)
+
+

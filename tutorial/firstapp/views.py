@@ -13,10 +13,11 @@ def insert(request):
 
 def show(request):
     curriculum = Curriculum.objects.all()
-    result = ''
-    for c in curriculum:
-        result += c.name + '<br>'
-    return HttpResponse(result)
+    # result = ''
+    # for c in curriculum:
+    #     result += c.name + '<br>'
+    # return HttpResponse(result)
+    return render(request, 'firstapp/show.html', {'data' : curriculum})
 
 
 def index1(request):
